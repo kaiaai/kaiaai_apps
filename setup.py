@@ -30,6 +30,7 @@ setup(
     entry_points={
         'console_scripts': [
             'explore = kaiaai_apps.explore:main'
+            'param_client_test = kaiaai_apps.param_client_test:main'
         ],
     },
 )
