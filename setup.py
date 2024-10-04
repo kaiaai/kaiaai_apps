@@ -29,8 +29,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'explore = kaiaai_apps.explore:main'
-            'param_client_test = kaiaai_apps.param_client_test:main'
+            'explore = kaiaai_apps.explore:main',
+            'param_client_test = kaiaai_apps.param_client_test:main',
+            'example_nav_to_pose = kaiaai_apps.example_nav_to_pose:main',
         ],
     },
 )
