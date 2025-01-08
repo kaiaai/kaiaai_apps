@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 from kaiaai.util import ModelParams
 
 def main():
