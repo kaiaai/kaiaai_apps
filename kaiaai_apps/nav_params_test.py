@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 import rclpy
 from kaiaai.util import ParamClient
 from kaiaai.util import ModelParams

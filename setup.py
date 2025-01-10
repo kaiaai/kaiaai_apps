@@ -34,6 +34,9 @@ setup(
             'example_nav_to_pose = kaiaai_apps.example_nav_to_pose:main',
             'single_goal_nav = kaiaai_apps.single_goal_nav:main',
             'multi_waypoints = kaiaai_apps.multi_waypoints:main',
+            'get_map_pos = kaiaai_apps.get_map_pos:main',
+            'defaults_test = kaiaai_apps.defaults_test:main',
+            'nav_params_test = kaiaai_apps.nav_params_test:main',
         ],
     },
 )
