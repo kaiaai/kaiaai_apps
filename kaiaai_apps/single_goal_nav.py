@@ -37,7 +37,7 @@ def main():
     # initial_pose.pose.orientation.w = 0.0
     # navigator.setInitialPose(initial_pose)
 
-#    navigator.waitUntilNav2Active()
+    navigator.waitUntilNav2Active(localizer='bt_navigator') # hack
 
     # If desired, you can change or load the map as well
     # navigator.changeMap('/path/to/map.yaml')
@@ -51,8 +51,6 @@ def main():
     goal_pose = PoseStamped()
     goal_pose.header.frame_id = 'map'
     goal_pose.header.stamp = navigator.get_clock().now().to_msg()
-#    goal_pose.pose.position.x = 2.298
-#    goal_pose.pose.position.y = -1.388
     goal_pose.pose.position.x = 1.8
     goal_pose.pose.position.y = 1.5
     goal_pose.pose.orientation.w = 0.0
@@ -98,7 +96,7 @@ def main():
     else:
         print('Goal has an invalid return status!')
 
-    navigator.lifecycleShutdown()
+#   navigator.lifecycleShutdown()
 
     exit(0)
 
