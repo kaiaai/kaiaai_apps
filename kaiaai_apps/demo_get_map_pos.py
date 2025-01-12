@@ -1,17 +1,17 @@
 #! /usr/bin/env python3
 import rclpy
-from kaiaai.util import MapPose
+from kaiaai.util import NavUtils
 
 
 def main(args=None):
   rclpy.init(args=args)
 
-  map_pose = MapPose()
+  nav_utils = NavUtils()
 
   while(True):
-    position = map_pose.get_map_pos_2d()
+    position = nav_utils.getMapPos2d()
     print(position)
-    rclpy.spin_once(map_pose)
+    rclpy.spin_once(nav_utils)
 
   rclpy.shutdown()
 
