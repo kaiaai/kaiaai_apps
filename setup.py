@@ -37,6 +37,8 @@ setup(
             'multi_waypoints = kaiaai_apps.multi_waypoints:main',
             'demo_get_map_pos = kaiaai_apps.demo_get_map_pos:main',
             'demo_get_map = kaiaai_apps.demo_get_map:main',
+            'demo_load_map = kaiaai_apps.demo_load_map:main',
+            'demo_save_map = kaiaai_apps.demo_save_map:main',
             'demo_get_model_params = kaiaai_apps.demo_get_model_params:main',
             'nav_params_test = kaiaai_apps.nav_params_test:main',
         ],
