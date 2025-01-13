@@ -11,6 +11,8 @@ def main(args=None):
   map = nav_utils.getCurrentMap()
   print(map.map)
 
+  map.save('/ros_ws/map.png')
+
   rclpy.shutdown()
 
 if __name__ == '__main__':
