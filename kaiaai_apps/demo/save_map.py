@@ -8,10 +8,10 @@ def main(args=None):
 
   nav_utils = NavUtils()
 
-  while(True):
-    position = nav_utils.getMapPos2d()
-    print(position)
-    rclpy.spin_once(nav_utils)
+  map = nav_utils.getCurrentMap()
+  print(map.map)
+
+  map.save('/ros_ws/map.png')
 
   rclpy.shutdown()
 
